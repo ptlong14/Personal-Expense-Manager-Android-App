@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="2dp"
+    android:background="@drawable/bg_item_day_in_month"
+    >
+    <TextView
+        android:id="@+id/txtDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300000"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+
+        android:textColor="#009688"/>
+
+    <TextView
+        android:id="@+id/txtExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="600000"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#E91E63"/>
+</LinearLayout>

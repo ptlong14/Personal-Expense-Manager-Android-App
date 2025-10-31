@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoneyManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.others_features.BalanceReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.others_features.CategoryAllTimeReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryYearReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.others_features.AllTimeReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.analysis_trans.CategoryAmountDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.search_transaction.SearchTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.manage_transaction.EditTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.manage_category.AddEditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.manage_category.ViewCategoryContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+
+            <!-- Đây là chỗ MAIN phải nằm -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

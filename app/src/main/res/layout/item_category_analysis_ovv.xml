@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContentTransaction_Search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="3dp"
+    android:background="@drawable/bg_item_transaction_home"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivCateIcon_OVV"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_salary"
+        app:tint="#673AB7" />
+
+    <TextView
+        android:id="@+id/tvCateName_OVV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:paddingHorizontal="14dp"
+        android:text="Tiền lương"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalCateAmount_OVV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:ellipsize="end"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:padding="10dp"
+        android:paddingHorizontal="14dp"
+        android:text="5000000đ"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalCateAmountPercent_OVV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="12dp"
+        android:text="20%"
+        android:padding="10dp"
+        android:textColor="#424242"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="#716F6F" />
+</LinearLayout>

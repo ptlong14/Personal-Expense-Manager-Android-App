@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeLayoutShowTrans_Calendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:minDistRequestDisallowParent="1dp"
+    app:mode="normal">
+
+    <LinearLayout
+        android:id="@+id/layoutDeleteTrans_Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_delete_item_transaction"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivDeleteTrans_Calendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_delete"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Layout chính -->
+    <LinearLayout
+        android:id="@+id/layoutContentTransaction_Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="3dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/bg_item_transaction_home"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivCateTransIcon_Calendar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_salary"
+            app:tint="#673AB7" />
+
+        <TextView
+            android:id="@+id/tvCateTransName_Calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:paddingHorizontal="12dp"
+            android:text="Tiền lương"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tvTransAmount_Calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="12dp"
+            android:text="5000000đ"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivGoToEditTrans_Calendar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="#716F6F" />
+    </LinearLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

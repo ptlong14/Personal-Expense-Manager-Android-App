@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/btNavCreate"
+    android:title="Nhập vào"
+    android:icon="@drawable/outline_border_color_24"
+    />
+    <item android:id="@+id/btNavCalendar"
+        android:title="Lịch"
+        android:icon="@drawable/outline_calendar_month"
+        />
+    <item android:id="@+id/btNavAnalysis"
+        android:title="Báo cáo"
+        android:icon="@drawable/outline_analytics_24"
+        />
+    <item android:id="@+id/btNavOther"
+        android:title="Khác"
+        android:icon="@drawable/outline_apps_24"
+        />
+</menu>

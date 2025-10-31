@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="6dp"
+    android:layout_weight="1"
+    android:background="@drawable/bg_item_category"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivIconAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_salary"
+        app:tint="#000000" />
+
+</LinearLayout>
